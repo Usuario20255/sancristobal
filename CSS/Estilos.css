@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(253, 89, 13);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: rgb(49, 49, 49);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+nav{
+    display: flex;
+    background-color: rgb(119, 118, 117);
+    justify-content: center;
+}
+
+nav a{
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-image: url("Img/2.jpg");
+    color: black;
+}
+
+main{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.divcentral{
+    background-color: chartreuse;
+    margin: 1rem;
+    padding: 1.5rem;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition:transform 0.3s;
+}
+
+.divcentral:hover{
+    transform: translateY(-5px);
+}
+
+footer{
+    background-color: aqua;
+    color: rgb(3, 3, 3);
+    text-align: center;
+    padding: 1rem;
+}
+@media(max-width:750px){
+    nav{
+        flex-direction: column;
+    }
+    .divcentral{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.divcentraln
+{
+    background-color: aqua;
+    width: 70rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+.divimgn{
+    background-color: rgb(233, 121, 17);
+    width: 10%;
+    float: left;
+
+}
+.divtextn{
+    background-color: chartreuse;
+    width: 90%;
+    float: left;
+}
+
+.contenedorcarrusel{
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.contenedorcarrusel img{
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
